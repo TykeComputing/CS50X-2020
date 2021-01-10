@@ -6,6 +6,12 @@ body {
 h1 {
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .headshot {
@@ -18,4 +24,51 @@ h1 {
 
 .headshot:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    border-radius: 0%;
+    transition: ease;
+    transition-duration: 0.5s;
 }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdowncontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdowncontent a:hover {
+    background-color: #b9b9b9;
+}
+
+/* Show menu on hover */
+.dropdown:hover .dropdowncontent {display: block;}
+
+/* Change background color of dropdown button when content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
