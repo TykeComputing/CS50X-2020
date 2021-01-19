@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: lightsteelblue;
-    height: 10%;
+    height: 20%;
 }
 
 main {
@@ -124,7 +124,9 @@ h3 {
 /* Container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
-    display: inline-block;
+    float: inline-start;
+    margin-right: 3%;
+    align-self: flex-start;
 }
 
 /* Dropdown Content (hidden by default) */
@@ -165,4 +167,12 @@ td, th {
     border: 1px solid black;
     padding: 20px;
     text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
